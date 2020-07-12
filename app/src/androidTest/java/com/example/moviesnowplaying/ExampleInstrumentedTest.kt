@@ -1,4 +1,4 @@
-package com.tmdb.movies
+package com.example.moviesnowplaying
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

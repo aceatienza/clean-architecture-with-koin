@@ -1,4 +1,4 @@
-package com.tmdb.movies
+package com.example.moviesnowplaying
 
 import org.junit.Test
 

@@ -1,8 +1,8 @@
-package com.tmdb.movies
+package com.example.moviesnowplaying
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.tmdb.movies.ui.main.MainFragment
+import com.example.moviesnowplaying.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 

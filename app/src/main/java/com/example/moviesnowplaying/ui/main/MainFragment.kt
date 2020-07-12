@@ -1,4 +1,4 @@
-package com.tmdb.movies.ui.main
+package com.example.moviesnowplaying.ui.main
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.tmdb.movies.R
+import com.example.moviesnowplaying.R
 
 class MainFragment : Fragment() {
 

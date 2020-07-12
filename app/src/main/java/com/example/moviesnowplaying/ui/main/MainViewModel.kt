@@ -1,4 +1,4 @@
-package com.tmdb.movies.ui.main
+package com.example.moviesnowplaying.ui.main
 
 import androidx.lifecycle.ViewModel
 
