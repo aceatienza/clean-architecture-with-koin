@@ -10,7 +10,7 @@ import com.squareup.moshi.JsonClass
  */
 @JsonClass(generateAdapter = true)
 data class NowPlayingResponse(
-    @Json(name = "dates") val dates: Dates?,
+    //@Json(name = "dates") val dates: Dates?, // TODO: retrofit is unable to create a converter with this field, is it a keyword? error message: "Unable to create converter for class"
     @Json(name = "page") val page: Int?,
     @Json(name = "results") val results: List<MovieListResult>?,
     @Json(name = "total_pages") val total_pages: Int?,
