@@ -53,5 +53,5 @@ private fun provideRetrofit(moshi: Moshi): Retrofit {
 }
 
 private fun provideMoviesService(retrofit: Retrofit): MoviesService {
-    return  retrofit.create(MoviesService::class.java)
+    return retrofit.create(MoviesService::class.java)
 }
