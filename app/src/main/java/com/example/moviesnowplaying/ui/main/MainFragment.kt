@@ -11,18 +11,14 @@ import com.example.moviesnowplaying.databinding.MainFragmentBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = MainFragment()
-    }
-
+    
     private lateinit var moviesAdapter: MoviesAdapter
 
     /**
      *     note: the correct import is "org.koin.androidx.viewmodel.ext.android.viewModel",
      *     not org.koin.androidx.viewmodel.compat.ScopeCompat.viewModel, or import org.koin.androidx.viewmodel.compat.ViewModelCompat.viewModel
      */
-    val mainViewModel: MainViewModel by viewModel()
+    private val mainViewModel: MainViewModel by viewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater,
