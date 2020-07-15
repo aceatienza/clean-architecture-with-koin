@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviesnowplaying.data.models.MovieShort
 import com.example.moviesnowplaying.databinding.ItemMovieShortBinding
+import com.example.moviesnowplaying.utils.loadImage
 
 class MoviesAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
@@ -31,12 +32,11 @@ class MoviesAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         (holder as ViewHolder).bind(_items[position])
     }
 
-    class ViewHolder(val binding: ItemMovieShortBinding) : RecyclerView.ViewHolder(binding.root) {
+    class ViewHolder(private val binding: ItemMovieShortBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(movieShort: MovieShort) {
             with(binding) {
-
-                // TODO: load with Glide - binding.imgMoviePoster
-
+                imgMoviePoster.loadImage(movieShort.posterPath)
                 txtTitle.text = movieShort.title
                 txtDate.text = movieShort.releaseDate
                 txtOverview.text = movieShort.overview

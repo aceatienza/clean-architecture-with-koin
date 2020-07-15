@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="97992e11-247b-4d23-88d6-48c84d08ee14" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviesnowplaying/data/models/Movie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviesnowplaying/data/models/Movie.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviesnowplaying/domain/MoviesNowPlayingUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviesnowplaying/domain/MoviesNowPlayingUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/moviesnowplaying/ui/main/MoviesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/moviesnowplaying/ui/main/MoviesAdapter.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_4gb_API_29" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1eaAH2WKq8LJx6Qbig7xaoP02Ji" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.moviesnowplaying.data.repositories" />
+      <recent name="com.example.moviesnowplaying.ui.main" />
+      <recent name="com.example.moviesnowplaying.data.models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/moviesnowplaying/di" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/tmdb/movies/data/services" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MovieRepositoryKoinTest">
+    <configuration name="MovieRepositoryTest.should return movie shorts" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.moviesnowplaying.data.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.moviesnowplaying.data.repositories" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviesnowplaying.data.repositories.MovieRepositoryTest" />
+      <option name="METHOD_NAME" value="should return movie shorts" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieRepositoryKoinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.moviesnowplaying.data.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.moviesnowplaying.data.repositories" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviesnowplaying.data.repositories.MovieRepositoryKoinTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieRepositoryKoinTest.should return movie shorts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.moviesnowplaying.data.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.moviesnowplaying.data.repositories" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviesnowplaying.data.repositories.MovieRepositoryKoinTest" />
+      <option name="METHOD_NAME" value="should return movie shorts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MovieRepositoryKoinTest" />
+        <item itemvalue="JUnit.MovieRepositoryKoinTest.should return movie shorts" />
+        <item itemvalue="Android JUnit.MovieRepositoryTest.should return movie shorts" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97992e11-247b-4d23-88d6-48c84d08ee14" name="Default Changelist" comment="" />
+      <created>1594549238310</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594549238310</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1440" y="468" width="950" height="537" key="#PSD" timestamp="1594652202653">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state x="1440" y="468" width="950" height="537" key="#PSD/0.27.2560.1413@0.27.2560.1413" timestamp="1594652202653" />
+    <state x="1312" y="452" width="442" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1594643136862">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state x="1312" y="452" width="442" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.2560.1413@0.27.2560.1413" timestamp="1594643136862" />
+    <state x="1405" y="651" width="1029" height="171" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594560974364">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state x="1405" y="651" width="1029" height="171" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.27.2560.1413@0.27.2560.1413" timestamp="1594560974364" />
+    <state x="637" y="478" width="1060" height="511" key="#xdebugger.evaluate" timestamp="1594653872640">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state x="637" y="478" width="1060" height="511" key="#xdebugger.evaluate/0.27.2560.1413@0.27.2560.1413" timestamp="1594653872640" />
+    <state x="863" y="491" width="824" height="491" key="AndroidCreateResourceDirectoryDialog" timestamp="1594724766868">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state x="863" y="491" width="824" height="491" key="AndroidCreateResourceDirectoryDialog/0.27.2560.1413@0.27.2560.1413" timestamp="1594724766868" />
+    <state width="2514" height="394" key="GridCell.Tab.0.bottom" timestamp="1594728566009">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2514" height="394" key="GridCell.Tab.0.bottom/0.27.2560.1413@0.27.2560.1413" timestamp="1594728566009" />
+    <state width="2514" height="394" key="GridCell.Tab.0.center" timestamp="1594728566009">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2514" height="394" key="GridCell.Tab.0.center/0.27.2560.1413@0.27.2560.1413" timestamp="1594728566009" />
+    <state width="2514" height="394" key="GridCell.Tab.0.left" timestamp="1594728566008">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2514" height="394" key="GridCell.Tab.0.left/0.27.2560.1413@0.27.2560.1413" timestamp="1594728566008" />
+    <state width="2514" height="394" key="GridCell.Tab.0.right" timestamp="1594728566009">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2514" height="394" key="GridCell.Tab.0.right/0.27.2560.1413@0.27.2560.1413" timestamp="1594728566009" />
+    <state width="2514" height="610" key="GridCell.Tab.1.bottom" timestamp="1594728520239">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2514" height="610" key="GridCell.Tab.1.bottom/0.27.2560.1413@0.27.2560.1413" timestamp="1594728520239" />
+    <state width="2514" height="610" key="GridCell.Tab.1.center" timestamp="1594728520237">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2514" height="610" key="GridCell.Tab.1.center/0.27.2560.1413@0.27.2560.1413" timestamp="1594728520237" />
+    <state width="2514" height="610" key="GridCell.Tab.1.left" timestamp="1594728520236">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2514" height="610" key="GridCell.Tab.1.left/0.27.2560.1413@0.27.2560.1413" timestamp="1594728520236" />
+    <state width="2514" height="610" key="GridCell.Tab.1.right" timestamp="1594728520238">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state width="2514" height="610" key="GridCell.Tab.1.right/0.27.2560.1413@0.27.2560.1413" timestamp="1594728520238" />
+    <state x="769" y="368" width="1463" height="737" key="SettingsEditor" timestamp="1594641281070">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state x="769" y="368" width="1463" height="737" key="SettingsEditor/0.27.2560.1413@0.27.2560.1413" timestamp="1594641281070" />
+    <state x="100" y="127" width="2360" height="1213" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1594641145360">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state x="100" y="127" width="2360" height="1213" key="com.android.tools.idea.avdmanager.AvdListDialog/0.27.2560.1413@0.27.2560.1413" timestamp="1594641145360" />
+    <state x="1568" y="472" width="992" height="522" key="find.popup" timestamp="1594650416114">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state x="1568" y="472" width="992" height="522" key="find.popup/0.27.2560.1413@0.27.2560.1413" timestamp="1594650416114" />
+    <state x="1583" y="349" width="672" height="678" key="search.everywhere.popup" timestamp="1594728926695">
+      <screen x="0" y="27" width="2560" height="1413" />
+    </state>
+    <state x="1583" y="349" width="672" height="678" key="search.everywhere.popup/0.27.2560.1413@0.27.2560.1413" timestamp="1594728926695" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/example/moviesnowplaying/network/response/NowPlayingResponse_DatesJsonAdapter.kt</url>
+          <line>28</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/moviesnowplaying/ui/main/MainFragment.kt</url>
+          <line>42</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

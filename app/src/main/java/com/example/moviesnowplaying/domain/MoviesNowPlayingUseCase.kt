@@ -3,8 +3,7 @@ package com.example.moviesnowplaying.domain
 import com.example.moviesnowplaying.data.models.MovieShort
 import com.example.moviesnowplaying.data.repositories.MovieRepository
 import com.example.moviesnowplaying.network.Resource
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.*
 
 class MoviesNowPlayingUseCase(
     private val movieRepository: MovieRepository
@@ -14,12 +13,34 @@ class MoviesNowPlayingUseCase(
 
         emit(Result.Loading)
 
-        when(val resource = movieRepository.getMoviesNowPlaying()) {
-            Resource.Loading -> TODO()
-            is Resource.Success -> Result.Success(resource.data)
-            is Resource.Error -> TODO()
-            Resource.NotFound -> TODO()
+        val getMoviesNowPlayingFlow = flowOf(movieRepository.getMoviesNowPlaying())
+        val getPosterBaseUrlFlow = flowOf(movieRepository.getPosterBaseUrl())
+
+        /**
+         *  handle multiple async api calls
+         */
+        combine(
+            getMoviesNowPlayingFlow,
+            getPosterBaseUrlFlow
+        ) { moviesNowResource, baseUrlResource ->
+
+            if (moviesNowResource is Resource.Success && moviesNowResource.data.isNotEmpty() && baseUrlResource is Resource.Success) {
+                val movies = moviesNowResource.data.map {
+                    it.copy(posterPath = baseUrlResource.data + it.posterPath)
+                }
+
+                return@combine Result.Success(movies)
+            }
+
+            if (moviesNowResource is Resource.Success && moviesNowResource.data.isNotEmpty() && baseUrlResource is Resource.Success) {
+                return@combine Result.Error(Throwable("There was an error retrieving move list"))
+            }
+
+            Result.Loading
+        }.collect {
+            emit(it)
         }
+
     }
 
     object Param
