@@ -2,6 +2,7 @@ package com.example.moviesnowplaying.data.repositories
 
 import com.example.moviesnowplaying.data.services.MoviesService
 import com.example.moviesnowplaying.network.Resource
+import com.example.moviesnowplaying.network.response.ConfigurationResponse
 import com.example.moviesnowplaying.network.response.NowPlayingResponse
 import com.example.moviesnowplaying.utils.JsonUtil
 import com.google.common.truth.Truth.assertThat
@@ -10,6 +11,7 @@ import io.mockk.coEvery
 import io.mockk.impl.annotations.MockK
 import io.mockk.mockk
 import kotlinx.coroutines.runBlocking
+import okhttp3.ResponseBody
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
@@ -55,6 +57,43 @@ class MovieRepositoryTest {
         assertThat((result as Resource.Success).data.first()).isEqualTo(firstMovieShort)
     }
 
+    @Test
+    fun `should return error when api error from getMoviesNowPlaying`() = runBlocking {
+
+        // Given
+        coEvery { moviesService.getNowPlaying(any()) } returns Response.error(
+            401,
+            ResponseBody.create(null, "Invalid api key".toByteArray())
+        )
+
+        // When
+        val result = movieRepository.getMoviesNowPlaying()
+
+        // Then
+        assertThat(result).isInstanceOf(Resource.Error::class.java)
+
+    }
+
+    @Test
+    fun `should return posterBaseurl`() = runBlocking {
+
+        // Given
+        val size = "w185"
+        val configurationResponse =
+            JsonUtil.jsonFileToObject<ConfigurationResponse>("/configuration.json")
+
+        coEvery { moviesService.getConfiguration() } returns Response.success(configurationResponse)
+
+        // When
+        val result = movieRepository.getPosterBaseUrl(size)
+
+        // Then
+        assertThat(result).isInstanceOf(Resource.Success::class.java)
+
+        val posterBaseUrl =
+            configurationResponse.images?.baseUrl + configurationResponse.images?.posterSizes?.firstOrNull { it == size }
+        assertThat((result as Resource.Success).data).isEqualTo(posterBaseUrl)
+    }
 }
 
 
