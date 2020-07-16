@@ -16,6 +16,9 @@ buildscript {
         moshi_version = "1.9.3"
         okhttp_version = "4.8.0"
         retrofit_version = "2.9.0"
+        test_core = "1.2.0"
+        test_junit = "1.1.1"
+        test_runner = "1.2.0"
     }
 
     dependencies {
