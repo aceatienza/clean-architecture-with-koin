@@ -5,18 +5,22 @@ import com.squareup.moshi.Moshi
 
 object JsonUtil {
 
-    /**
-     * usage ex: "/movies.json" from /resources
-     */
-    inline fun <reified T> jsonFileToObject(path: String): T {
-
-        val jsonString: String = try {
+    fun getStringFromResource(path: String): String? {
+        return try {
             val res = javaClass.getResource(path)
             res?.readText(Charsets.UTF_8)
         } catch (e: Exception) {
             throw JsonUtilException(e.message)
         }
             ?: throw JsonUtilException("null json")
+    }
+
+    /**
+     * usage ex: "/movies.json" from /resources
+     */
+    inline fun <reified T> jsonFileToObject(path: String): T {
+
+        val jsonString = getStringFromResource(path)
 
         val moshi = Moshi.Builder().build()
         val adapter: JsonAdapter<T> = moshi.adapter(T::class.java)

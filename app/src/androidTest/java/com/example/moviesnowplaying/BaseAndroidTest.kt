@@ -31,20 +31,18 @@ abstract class BaseAndroidTest {
 
     lateinit var app: TestApp
 
-    private val server = MockWebServer()
+    val server = MockWebServer()
 
     @Before
     open fun setup() {
         app = ApplicationProvider.getApplicationContext()
-
-        // TODO: add Dispatcher to MockWebServer and replace /configuration and /now_playing responses with local json
-
         server.start()
     }
 
     @After
     fun teardown() {
         activityRule.finishActivity()
+        server.shutdown()
     }
 
     fun launchActivity(
@@ -61,9 +59,9 @@ abstract class BaseAndroidTest {
         )
     ) {
         app.inject(modules)
+
         activityRule.launchActivity(null)
     }
-
 
     private fun provideRetrofit(okHttpClient: OkHttpClient, moshi: Moshi): Retrofit {
         //  url() needs to be off the main thread
